@@ -1,3 +1,11 @@
+
+# JSON-server
+
+https://github.com/typicode/json-server
+
+Start JSON Server
+json-server --watch db.json
+
 # Github
 
 https://github.com/alura-cursos/1952-angular
