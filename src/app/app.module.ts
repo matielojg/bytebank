@@ -1,3 +1,4 @@
+import { FileUploadModule } from './file-upload/file-upload.module';
 import { NovaTransferenciaComponent } from './nova-tranferencia/nova-transferencia.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
@@ -13,11 +14,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 
 
+
 //https://angular.io/api/core/LOCALE_ID
 registerLocaleData(localePt, 'pt');
 @NgModule({
   declarations: [AppComponent, NovaTransferenciaComponent, ExtratoComponent],
-  imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule,FileUploadModule],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR' },
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' },
